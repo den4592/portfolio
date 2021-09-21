@@ -7,7 +7,6 @@ export default props => {
     // Pass on our props
     <Menu {...props}>
       <nav>
-           
                         <li className="menu-item"><Link activeClass="active" to="home-container" spy={true} smooth={true}>Home</Link>
                         </li>
                         

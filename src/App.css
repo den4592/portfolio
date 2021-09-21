@@ -384,7 +384,6 @@ li:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
 }
 
 .skills-container i {
@@ -395,11 +394,13 @@ li:hover {
 }
 
 .main-skills {
-  display: flex;
+  margin-top: 1rem;
+  display: grid;
+  gap: 1rem;
   align-items: center;
-  justify-content: flex-start;
-  width: 55rem;
-  height: 20rem;
+  justify-content: center;
+  grid-template-columns: 5rem 5rem 5rem 5rem;
+  grid-template-rows: 5rem 5rem;
 }
 
 .main-text {
@@ -413,11 +414,13 @@ li:hover {
 }
 
 .additional-skills {
-  display: flex;
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
   align-items: center;
-  justify-content: flex-start;
-  width: 55rem;
-  height: 20rem;
+  justify-content: center;
+  grid-template-columns: 5rem 5rem 5rem 5rem;
+  grid-template-rows: 5rem 5rem;
 }
 
 .additional-text {
@@ -594,11 +597,35 @@ textarea {
   }
 }
 
+/*Modal*/
+.modal {
+  width: 30rem;
+  height: 30rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  position: absolute;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal span {
+  position: absolute;
+  left: 1rem;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 /*Break Point-반응형*/
 @media screen and (max-width: 1020px) {
   .home-container {
     width: 100%;
-    border: 1px solid red;
   }
   .home-elements {
     width: 20rem;
@@ -637,23 +664,13 @@ textarea {
   }
 
   /*Skills Component*/
-  .skills-wrapper {
-    height: 50rem;
-  }
   .skills-container {
     width: 30rem;
-    height: 40rem;
     margin: 0 auto;
   }
-  .main-skills {
-    width: 30rem;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-  }
+
   .additional-skills {
-    width: 30rem;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    margin-top: 3rem;
   }
 
   /*Projects Component*/
@@ -693,10 +710,10 @@ textarea {
 
 @media screen and (max-width: 540px) {
   .home-container {
-    height: 80vh;
+    width: 100%;
   }
   .home-elements {
-    width: 30rem;
+    width: 20rem;
   }
   .home-elements span {
     font-size: 4rem;
@@ -704,7 +721,7 @@ textarea {
 
   .home-elements h1,
   h3 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   /*About Component*/
 
@@ -719,29 +736,34 @@ textarea {
   .about-me-text {
     width: 20rem;
   }
-
+  .about-personal-details {
+    width: 20rem;
+  }
   .about-me {
     width: 20rem;
   }
 
+  .about {
+    width: 20rem;
+  }
   .about-me span {
     left: 3.5rem;
   }
   /*Skills Component*/
+  .skills-wrapper {
+    height: 50rem;
+  }
   .skills-container {
-    width: 100%;
+    width: 20rem;
   }
   .main-skills {
-    width: 25rem;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 1rem;
+    grid-template-columns: 5rem 5rem 5rem;
+    grid-template-rows: 5rem 5rem;
   }
+
   .additional-skills {
-    width: 25rem;
-    align-items: center;
-    justify-content: space-between;
-    padding: 3rem;
+    grid-template-columns: 5rem 5rem 5rem;
+    grid-template-rows: 5rem 5rem;
   }
 
   /*Projects Component*/
@@ -783,5 +805,31 @@ textarea {
   }
   label {
     color: white;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .home-elements {
+    width: 15rem;
+  }
+  .home-elements span {
+    font-size: 2.5rem;
+  }
+
+  .home-elements h1,
+  h3 {
+    font-size: 2.5rem;
+  }
+  .skills-wrapper {
+    height: 50rem;
+  }
+  .main-skills {
+    grid-template-columns: 5rem 5rem 5rem;
+    grid-template-rows: 5rem 5rem;
+  }
+
+  .additional-skills {
+    grid-template-columns: 5rem 5rem 5rem;
+    grid-template-rows: 5rem;
   }
 }

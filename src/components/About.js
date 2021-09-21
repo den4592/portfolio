@@ -1,13 +1,33 @@
-import React from 'react';
+import React,{useState} from 'react';
 import profile from '../img/profile-img.jpg';
-import AboutButton from './styled/AboutButton';
-import Flash from 'react-reveal/Flash';
 import ScrollAnimation from 'react-animate-on-scroll';
-import Certification from './Certification';
+import ModalButton from './styled/ModalButton';
 
 
 
 const About=()=>{
+    const [isModal,setIsModal]=useState(false);
+
+    const showModal=()=>{
+        setIsModal(true);
+        function disableScroll() { 
+            document.body.classList.add("stop-scrolling"); 
+
+        } 
+        let stopScroll = disableScroll();
+
+    }
+
+     const hideModal=()=>{
+        setIsModal(false);
+        function removeDisableScroll(){
+            document.body.classList.remove("stop-scrolling"); 
+
+        }
+        let scroll = removeDisableScroll();
+
+    }
+
     return (
         <div className="about-wrapper">
             <div className="about-container">
@@ -23,7 +43,6 @@ const About=()=>{
                             </div>
                             <div className="about-me-text">
                                 <h1 style={{color:'white',textAlign:'center',paddingTop:'1rem'}}>안녕하세요!</h1>
-                                
                                 <p style={{color:'white', lineHeight:'1.8rem'}}><i className="fas fa-chevron-right" style={{color:'#E52885',marginTop:'1.5rem'}}></i> 저는 Junior 웹 개발자 일리야입니다. React를 기반으로 Front-End 웹 개발을 하고 있습니다. 컴퓨터공학 전공이며, 개인 프로젝트 뿐만 아닌 팀원들과의 협동 프로젝트에 대한 커뮤니케이션 능력 또한 좋습니다.</p>
                             </div>
                         </div>
@@ -36,18 +55,17 @@ const About=()=>{
                             <p><i className="fas fa-chevron-right"></i><span>den4592@naver.com </span> Email</p>
                             <p><i className="fas fa-chevron-right"></i><span> 010-8561-1536</span> Phone-Num</p>
                             <p><i className="fas fa-chevron-right"></i><span>서울시 마포구 상암동 거주</span> Address</p>
-                           <Certification className="certification-btn"/>
-                
-                              
-
+                            <div onClick={showModal}><ModalButton >Certification</ModalButton></div>
                         </div>
                     </div>
-                        
-                          
-              
-               
-               
-                    
+                    {isModal&&
+                            <div className="bcc">
+                                <div className='modal' >
+                                    <span style={{color:"red"}} onClick={hideModal}>
+                                        <i class="fas fa-times"></i>
+                                    </span>
+                                </div>
+                            </div>}
             </div>
         </div>
     );
