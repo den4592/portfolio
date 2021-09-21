@@ -4,9 +4,9 @@ import Fade from 'react-reveal/Fade';
 const Home=()=>{
     return(
         <div className="home-container">
-           <div class="context"></div>
+           <div className="context"></div>
 
-                <ul class="circles">
+                <ul className="circles">
                         <li></li>
                         <li></li>
                         <li></li>

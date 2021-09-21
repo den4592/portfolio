@@ -62,7 +62,7 @@ const About=()=>{
                             <div className="bcc">
                                 <div className='modal' >
                                     <span style={{color:"red"}} onClick={hideModal}>
-                                        <i class="fas fa-times"></i>
+                                        <i className="fas fa-times"></i>
                                     </span>
                                 </div>
                             </div>}

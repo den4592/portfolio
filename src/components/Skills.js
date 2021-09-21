@@ -13,19 +13,19 @@ const Skills=()=>{
                         <span style={{color:'white'}}>Main</span>
                     </div>
                 <div className="html-container" style={{width:'5rem',height:'5rem',border:'1px solid white', borderRadius:'1rem',textAlign:'center'}}>
-                    <i class="fab fa-html5"></i>
+                    <i className="fab fa-html5"></i>
                     <p style={{textAlign:'center',color:'white',fontSize:'.7rem'}}>HTML</p>
                 </div>
                 <div className="css-container" style={{width:'5rem',height:'5rem',border:'1px solid white', borderRadius:'1rem',textAlign:'center'}}>
-                    <i class="fab fa-css3-alt"></i>  
+                    <i className="fab fa-css3-alt"></i>  
                     <p style={{textAlign:'center',color:'white',fontSize:'.7rem'}}>CSS</p>
                 </div>
                 <div className="js-container" style={{width:'5rem',height:'5rem',border:'1px solid white', borderRadius:'1rem',textAlign:'center'}}>
-                    <i class="fab fa-js"></i>
+                    <i className="fab fa-js"></i>
                     <p style={{textAlign:'center',color:'white',fontSize:'.7rem'}}>JavaScript</p>
                 </div>
                 <div className="react-container" style={{width:'5rem',height:'5rem',border:'1px solid white', borderRadius:'1rem',textAlign:'center'}}>
-                    <i class="fab fa-react"></i>
+                    <i className="fab fa-react"></i>
                     <p style={{textAlign:'center',color:'white',fontSize:'.7rem'}}>React</p>
                 </div>
                 <div className="redux-container" style={{width:'5rem',height:'5rem',border:'1px solid white', borderRadius:'1rem',textAlign:'center'}}>
@@ -33,11 +33,11 @@ const Skills=()=>{
                     <p style={{textAlign:'center',color:'white',fontSize:'.7rem'}}>Redux</p>
                 </div>
                  <div className="sass-container" style={{width:'5rem',height:'5rem',border:'1px solid white', borderRadius:'1rem',textAlign:'center'}}>
-                    <i class="fab fa-sass"></i>
+                    <i className="fab fa-sass"></i>
                     <p style={{textAlign:'center',color:'white',fontSize:'.7rem'}}>Sass</p>
                 </div>
                 <div className="bootstrap-container" style={{width:'5rem',height:'5rem',border:'1px solid white', borderRadius:'1rem',textAlign:'center'}}>
-                    <i class="fab fa-bootstrap"></i>
+                    <i className="fab fa-bootstrap"></i>
                     <p style={{textAlign:'center',color:'white',fontSize:'.7rem'}}>Bootstrap</p>
                 </div>
                 
@@ -48,15 +48,15 @@ const Skills=()=>{
                         <span style={{color:'white'}}>Additional</span>
                     </div>
                     <div className="git-container" style={{width:'5rem',height:'5rem',border:'1px solid white', borderRadius:'1rem',textAlign:'center'}}>
-                        <i class="fab fa-git-alt"></i>
+                        <i className="fab fa-git-alt"></i>
                         <p style={{textAlign:'center',color:'white',fontSize:'.7rem'}}>Git</p>
                     </div>
                     <div className="github-container" style={{width:'5rem',height:'5rem',border:'1px solid white', borderRadius:'1rem',textAlign:'center'}}>
-                        <i class="fab fa-github"></i>
+                        <i className="fab fa-github"></i>
                         <p style={{textAlign:'center',color:'white',fontSize:'.7rem'}}>Github</p>
                     </div>
                     <div className="figma-container" style={{width:'5rem',height:'5rem',border:'1px solid white', borderRadius:'1rem',textAlign:'center'}}>
-                        <i class="fab fa-figma"></i>
+                        <i className="fab fa-figma"></i>
                         <p style={{textAlign:'center',color:'white',fontSize:'.7rem'}}>Figma</p>
                     </div>
                     
