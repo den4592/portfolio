@@ -74,7 +74,7 @@ export default function SimpleSlider() {
               <h3>Personal Web Site</h3>
               <p><i className="fas fa-chevron-right"></i><span> Portfolio</span></p>
               <p><i className="fas fa-chevron-right"></i> 개발 스택:<span> React, styled-components</span></p>
-              <a href="https://github.com/den4592/material-ui-todo"><ProjectsButton>Take a look</ProjectsButton></a>
+              <a href="https://denill-port.netlify.app/"><ProjectsButton>Take a look</ProjectsButton></a>
             </div>
           </div>
         </Slider>
