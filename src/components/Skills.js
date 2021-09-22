@@ -1,12 +1,17 @@
 import { Icon } from '@iconify/react';
+import Jello from 'react-reveal/Jello';
+import Swing from 'react-reveal/Swing';
 
 const Skills=()=>{
     return(
         <div className="skills-wrapper">
+         <Swing>
             <h1 style={{textAlign:'center',color:'white',paddingTop:'3rem',fontSize:'3rem', fontWeight:'500',}}>Skills
             <hr style={{width:'5rem', margin:'0 auto',border:'1px solid #E52885'}}/></h1>
+         </Swing>      
             
             <div className="skills-container">
+            <Jello>
                 <div className="main-skills" >
                     <div className="main-text" style={{width:'5rem',height:'5rem', borderRadius:'1rem',textAlign:'center', backgroundColor:'#e52885'}}>
                         <span style={{color:'white'}}>Main</span>
@@ -35,10 +40,7 @@ const Skills=()=>{
                     <i className="fab fa-sass"></i>
                     <p style={{textAlign:'center',color:'white',fontSize:'.7rem'}}>Sass</p>
                 </div>
-                
-                
                 </div>
-                
                 <div className="additional-skills">
                     <div className="additional-text" style={{width:'5rem',height:'5rem', borderRadius:'1rem',textAlign:'center',backgroundColor:'#2CBB76'}}>
                         <span style={{color:'white'}}>Additional</span>
@@ -51,9 +53,8 @@ const Skills=()=>{
                         <i className="fab fa-github"></i>
                         <p style={{textAlign:'center',color:'white',fontSize:'.7rem'}}>Github</p>
                     </div>
-                    
-                    
                 </div>
+                </Jello>
             </div>
             
             

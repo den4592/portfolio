@@ -521,7 +521,6 @@ label {
 input,
 textarea {
   font: 1em sans-serif;
-
   width: 20rem;
   height: 2rem;
   -moz-box-sizing: border-box;
@@ -539,81 +538,6 @@ textarea {
   height: 5em;
   max-height: 10rem;
   resize: vertical;
-}
-
-.certification button {
-  cursor: pointer;
-  margin-top: 1.5rem;
-  border: none;
-  width: 12rem;
-  height: 3.5rem;
-  background: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
-  border-radius: 1rem;
-  color: white;
-  font-size: 1.2rem;
-  position: absolute;
-  right: 0;
-}
-
-.certification button:hover {
-  background-position: 100% 0;
-  moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  background-image: linear-gradient(
-    to right,
-    #25aae1,
-    #40e495,
-    #30dd8a,
-    #2bb673
-  );
-  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
-  -webkit-animation: mover 1s infinite alternate;
-  animation: mover 1s infinite alternate;
-
-  @-webkit-keyframes mover {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(-10px);
-    }
-  }
-
-  @keyframes mover {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(-10px);
-    }
-  }
-}
-
-/*Modal*/
-.modal {
-  width: 30rem;
-  height: 30rem;
-  background-color: #fff;
-  border-radius: 1rem;
-  position: absolute;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.modal span {
-  position: absolute;
-  left: 1rem;
-  font-size: 3rem;
-  cursor: pointer;
-}
-
-.stop-scrolling {
-  height: 100%;
-  overflow: hidden;
 }
 
 /*Break Point-반응형*/

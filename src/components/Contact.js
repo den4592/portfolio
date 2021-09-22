@@ -1,7 +1,8 @@
 import React,{useState} from 'react';
 import emailjs from 'emailjs-com';
 import ContactButton from './styled/ContactButton';
-import validator from 'validator'
+import validator from 'validator';
+import Fade from 'react-reveal/Fade';
 
 
 const Contact=()=>{
@@ -28,6 +29,7 @@ const Contact=()=>{
 
   return (
       <div className="contact-wrapper">
+       <Fade>
           <h1 style={{textAlign:'center',color:'white',paddingTop:'3rem',fontSize:'3rem', fontWeight:'500',}}>Contact</h1>
           <hr style={{width:'5rem', margin:'0 auto',border:'1px solid #E52885'}}/>
         <div className="contact-container">
@@ -54,6 +56,7 @@ const Contact=()=>{
                 <ContactButton onClick={sendEmail} type="submit" value="Send">Submit</ContactButton>
             </form>
           </div>
+        </Fade>     
     </div>
   );
     }

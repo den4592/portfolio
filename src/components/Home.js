@@ -5,7 +5,6 @@ const Home=()=>{
     return(
         <div className="home-container">
            <div className="context"></div>
-
                 <ul className="circles">
                         <li></li>
                         <li></li>
@@ -18,9 +17,6 @@ const Home=()=>{
                         <li></li>
                         <li></li>
                 </ul>
-
-            
-          
             <div className="home-elements">
                     <Fade left cascade>                        
                         <h1 style={{color:'#D62469', fontSize:'7rem'}}>Welcome.</h1>

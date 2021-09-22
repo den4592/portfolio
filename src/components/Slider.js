@@ -6,6 +6,7 @@ import portfolio_img from '../img/portfolio.png';
 import todo_app_img from '../img/todo-app.png';
 import secondway_studio_img from '../img/secondway_studio.png';
 import ProjectsButton from "./styled/ProjectsButton";
+import Fade from 'react-reveal/Fade';
 
 export default function SimpleSlider() {
   const settings = {
@@ -19,13 +20,12 @@ export default function SimpleSlider() {
     autoplay : true,			// 자동 스크롤 사용 여부
 		autoplaySpeed : 3000, 		// 자동 스크롤 시 다음으로 넘어가는데 걸리는 시간 (ms)
 		pauseOnHover : true,	
-
-      
-
 };
 
   return (
+    
       <div className="slider-container">
+      <Fade>  
         <Slider style={{ outline:'none',}}{...settings}>
           <div>
             <h1>CLNK - Marketing Platform for Influencers</h1>
@@ -78,7 +78,8 @@ export default function SimpleSlider() {
             </div>
           </div>
         </Slider>
+     </Fade>  
       </div>
- 
+  
   );
 }
