@@ -6,27 +6,6 @@ import ModalButton from './styled/ModalButton';
 
 
 const About=()=>{
-    const [isModal,setIsModal]=useState(false);
-
-    const showModal=()=>{
-        setIsModal(true);
-        function disableScroll() { 
-            document.body.classList.add("stop-scrolling"); 
-
-        } 
-        let stopScroll = disableScroll();
-
-    }
-
-     const hideModal=()=>{
-        setIsModal(false);
-        function removeDisableScroll(){
-            document.body.classList.remove("stop-scrolling"); 
-
-        }
-        let scroll = removeDisableScroll();
-
-    }
 
     return (
         <div className="about-wrapper">
@@ -55,17 +34,11 @@ const About=()=>{
                             <p><i className="fas fa-chevron-right"></i><span>den4592@naver.com </span> Email</p>
                             <p><i className="fas fa-chevron-right"></i><span> 010-8561-1536</span> Phone-Num</p>
                             <p><i className="fas fa-chevron-right"></i><span>서울시 마포구 상암동 거주</span> Address</p>
-                            <div onClick={showModal}><ModalButton >Certification</ModalButton></div>
+                            <p><i className="fas fa-chevron-right"></i><span>정보처리기사</span> Certifications</p>
+                            
                         </div>
                     </div>
-                    {isModal&&
-                            <div className="bcc">
-                                <div className='modal' >
-                                    <span style={{color:"red"}} onClick={hideModal}>
-                                        <i className="fas fa-times"></i>
-                                    </span>
-                                </div>
-                            </div>}
+                    
             </div>
         </div>
     );

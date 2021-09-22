@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import clink_img from '../img/clink.png';
 import weather_app_img from '../img/weather-app.png';
+import portfolio_img from '../img/portfolio.png';
 import todo_app_img from '../img/todo-app.png';
 import secondway_studio_img from '../img/secondway_studio.png';
 import ProjectsButton from "./styled/ProjectsButton";
@@ -27,11 +28,11 @@ export default function SimpleSlider() {
       <div className="slider-container">
         <Slider style={{ outline:'none',}}{...settings}>
           <div>
-            <h1>CLNK -Marketing Platform for Influencers</h1>
+            <h1>CLNK - Marketing Platform for Influencers</h1>
             <img src={clink_img} alt="clink_img"/>
             <div className="project">
               <h3>(주)버즈비터즈</h3>
-              <p><i className="fas fa-chevron-right"></i> 개발 기간:<span> 2020.01.01.~2020.01.01</span></p>
+              <p><i className="fas fa-chevron-right"></i><span> 클링크 웹 페이지</span></p>
               <p><i className="fas fa-chevron-right"></i> 개발 스택:<span> HTML, CSS, JavaScript</span></p>
               <a href="https://c-lnk.com/"><ProjectsButton>Take a look</ProjectsButton></a>
             </div>
@@ -41,7 +42,7 @@ export default function SimpleSlider() {
             <img src={secondway_studio_img} alt="secondway_studio_img"/>
             <div className="project">
               <h3>(주)버즈비터즈</h3>
-              <p><i className="fas fa-chevron-right"></i> 개발 기간:<span> 2020.01.01.~2020.01.01</span></p>
+              <p><i className="fas fa-chevron-right"></i><span> 세컨드웨이 스튜디오 웹 페이지</span></p>
               <p><i className="fas fa-chevron-right"></i> 개발 스택:<span> HTML, CSS, JavaScript</span></p>
               <a href="https://www.secondway.studio/"><ProjectsButton>Take a look</ProjectsButton></a>
             </div>
@@ -51,7 +52,7 @@ export default function SimpleSlider() {
             <img src={weather_app_img} alt="weather_app_img"/>
             <div className="project">
               <h3>Toy Project</h3>
-              <p><i className="fas fa-chevron-right"></i> 개발 기간:<span> 2020.01.01.~2020.01.01</span></p>
+              <p><i className="fas fa-chevron-right"></i><span> Weather App</span></p>
               <p><i className="fas fa-chevron-right"></i> 개발 스택:<span> React, Material UI, Weather Api</span></p>
               <a href="https://github.com/den4592/react-weather-app"><ProjectsButton>Take a look</ProjectsButton></a>
             </div>
@@ -61,16 +62,20 @@ export default function SimpleSlider() {
             <img src={todo_app_img} alt="todo_app_img"/>
             <div className="project">
               <h3>Toy Project</h3>
-              <p><i className="fas fa-chevron-right"></i> 개발 기간:<span> 2020.01.01.~2020.01.01</span></p>
+              <p><i className="fas fa-chevron-right"></i><span> Todo List</span></p>
               <p><i className="fas fa-chevron-right"></i> 개발 스택:<span> React, Material UI, JSON Server</span></p>
               <a href="https://github.com/den4592/material-ui-todo"><ProjectsButton>Take a look</ProjectsButton></a>
             </div>
           </div>
           <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
+           <h1>Portfolio Web Site</h1>
+            <img src={portfolio_img} alt="portfolio_img"/>
+            <div className="project">
+              <h3>Personal Web Site</h3>
+              <p><i className="fas fa-chevron-right"></i><span> Portfolio</span></p>
+              <p><i className="fas fa-chevron-right"></i> 개발 스택:<span> React, styled-components</span></p>
+              <a href="https://github.com/den4592/material-ui-todo"><ProjectsButton>Take a look</ProjectsButton></a>
+            </div>
           </div>
         </Slider>
       </div>
