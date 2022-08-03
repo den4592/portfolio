@@ -4,19 +4,9 @@
   box-sizing: border-box;
 }
 
-h1 {
-  font-family: "Roboto", sans-serif;
-}
-h3 {
-  font-family: "Roboto", sans-serif;
-}
-p {
-  font-family: "Roboto", sans-serif;
-}
-
 body {
-  width: 100%;
-  height: 100%;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
   background-image: url("./img//cool-background.png");
   background-size: cover;
   background-attachment: fixed;
@@ -24,7 +14,7 @@ body {
 
 #page-wrap {
   /* Prevent sidebar from showing a scrollbar on page */
-  overflow: auto;
+  overflow: hidden;
 }
 
 li {
@@ -219,13 +209,7 @@ li:hover {
 /*Article Effect*/
 .home-elements h3 {
   /*  leverage cascade for cross-browser gradients  */
-  background: radial-gradient(hsl(100 100% 60%), hsl(200 100% 60%)) fixed;
-  background: conic-gradient(
-      hsl(100 100% 60%),
-      hsl(200 100% 60%),
-      hsl(100 100% 60%)
-    )
-    fixed;
+  background: linear-gradient(hsl(100 100% 60%), hsl(200 100% 60%));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
@@ -454,7 +438,6 @@ li:hover {
   border-radius: 1rem;
   box-shadow: 3px 3px 3px 3px gray;
 }
-
 .slider-container h1 {
   text-align: center;
   font-size: 2rem;
