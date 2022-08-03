@@ -102,7 +102,7 @@ export default function SimpleSlider() {
             <h1>Portfolio Web Site</h1>
             <img src={portfolio_img} alt="portfolio_img" />
             <div className="project">
-              <h3>Personal Web Site</h3>
+              <h3>Portfolio</h3>
               <p>
                 <i className="fas fa-chevron-right"></i>
                 <span> Portfolio</span>
